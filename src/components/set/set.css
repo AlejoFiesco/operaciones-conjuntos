@@ -1,0 +1,16 @@
+.set{
+    display: flex;
+    width: 400px;
+    font-size: 24pt;
+    gap: 10px;
+    justify-content: center;
+}
+
+.set input{
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.set input.extra-width{
+    min-width: 600px;
+}

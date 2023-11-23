@@ -1,0 +1,18 @@
+.operations{
+    display: flex;
+    gap: 10px;    
+}
+
+.operations button{
+    width: 200px;
+    padding: 5px;
+    font-size: 12pt;
+}
+
+.small{
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    font-size: 8pt;
+    text-align: center;
+}

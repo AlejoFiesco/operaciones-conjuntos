@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Set from './components/set/Set';
+import SetContainer from './components/sets-container/Set-container';
+import useController from './hooks/useController';
 
 function App() {
+
+  const {set1ref, set2ref, resultSetRef, operations} = useController();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SetContainer operations={operations} set1ref={set1ref} set2ref={set2ref}/>
+      <div className='result centered-content'>
+        <Set reference={resultSetRef} simbol={'C'} editable={false} large />
+      </div>
     </div>
   );
 }
